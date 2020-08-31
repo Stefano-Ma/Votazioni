@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<title>Risultati</title>
+</head>
+<body>
+<h1>Risultati elezioni</h1>
+
+<h2> Numero votanti</h2> {{vot}}
+
+<ul>
+{% for e in votes %}
+  <li>{{ e }} {{ votes[e] }}</li>
+{% endfor %}
+</ul>
+<br>
+<ul>
+{% for e in no %}
+  <li>{{ e }} {{ no[e] }}</li>
+{% endfor %}
+</ul>
+
+
+</body>
+</html>
